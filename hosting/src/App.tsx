@@ -17,7 +17,7 @@ function App() {
   }, []);
   const callFirebaseFunction = async () => {
     try {
-      const res = await firebase.functions().httpsCallable("hellworld")();
+      const res = await firebase.functions().httpsCallable("helloWorld")();
       alert(JSON.stringify(res));
     } catch (e) {
       alert("error!");
